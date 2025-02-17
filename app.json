@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "stepper-counter",
-    "slug": "stepper-counter",
+    "slug": "steppercounter",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.marco.arb.steppercounter"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +33,25 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Allow $(PRODUCT_NAME) to access your device motion"
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e5b4df7b-d436-49ab-a561-219eae0f269b"
+      }
+    },
+    "owner": "marco.arb"
   }
 }
